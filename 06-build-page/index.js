@@ -50,6 +50,6 @@ const { readdir, readFile, copyFile, mkdir, writeFile, appendFile } = require('f
         stylesArr.push(fileData);
       }
     }
-    appendFile(styleDestFile, stylesArr.join('\n'));
+    appendFile(styleDestFile, stylesArr.reverse().join('\n'));
   })(stylesSrcDir);
 })();
